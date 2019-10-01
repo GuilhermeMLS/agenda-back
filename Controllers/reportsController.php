@@ -31,7 +31,7 @@ class reportsController extends Controller
 
     private function getReport()
     {
-        require(ROOT.'Services/reportService.php');
+        require(ROOT . 'Services/reportService.php');
         $service = new reportService();
         $report = $service->getReport();
         $response['body'] = json_encode($report);
