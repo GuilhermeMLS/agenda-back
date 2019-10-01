@@ -31,7 +31,7 @@ class mixController extends Controller
 
     public function mixByName()
     {
-        require(ROOT.'Services/mixService.php');
+        require(ROOT . 'Services/mixService.php');
         $jsonBody = $this->getRequestBody();
         $service = new mixService();
         $service->mixByName($jsonBody);
